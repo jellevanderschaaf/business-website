@@ -12,14 +12,51 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
         <style>
+            @import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+            a {
+                color: #fff;
+            }
+
+            h1, h2, h3, h4 {
+                font-family: 'Baloo Bhai', Verdana, sans-serif;
+            }
+
             .col-lg-3, .col-md-6 {
                 padding: 0;
             }
+
+            .img-hover-zoom {
+                overflow: hidden;
+            }
+
+            .img-hover-zoom img {
+                transition: transform .5s ease;
+            }
+
+            .img-hover-zoom:hover img {
+                transform: scale(1.3);
+            }
+
+            .btn-primary {
+                background-color: #000;
+            }
+
+            .navbar-toggler-icon {
+                background: #000;
+                color: rgba(255, 0, 0, 1);
+            }
+
+            #roster h1 {
+                text-align: center;
+            }
+
         </style>
     </head>
     
     <body>
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-md bg-primary navbar-default sticky-top">
             <a class="navbar-brand" href="#">LOGO</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span></button>
@@ -45,12 +82,12 @@
             </div>  
         </nav>
 
-        <div class="container">
-            <h2>Artiesten</h2>
+        <div id="roster" class="container">
+            <h1>Artiesten</h1>
             <div class="row">
                 <div class="card-group">
                 <div class="col-lg-3 col-md-6">
-                    <div class="card" style="height:350px; color:#fff">
+                    <div class="card img-hover-zoom" style="height:350px; color:#fff">
                         <img class="card-img-top h-100" src="http://images.genius.com/a85e49c673ed9c490e56565e69638712.1000x1000x1.jpg" alt="Card image" style="object-fit:cover">
                         <div class="card-img-overlay">
                         <h4 class="card-title">Fresku</h4>
@@ -60,7 +97,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="card" style="height:350px; color:#fff">
+                    <div class="card img-hover-zoom" style="height:350px; color:#fff">
                         <img class="card-img-top h-100" src="https://explore-the-north.nl/thumbs/690x500r/2018-10/akwasi-web.jpg" alt="Card image" style="object-fit:cover">
                         <div class="card-img-overlay">
                         <h4 class="card-title">Akwasi</h4>
@@ -70,7 +107,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="card" style="height:350px; color:#fff">
+                    <div class="card img-hover-zoom" style="height:350px; color:#fff">
                         <img class="card-img-top h-100" src="http://images.genius.com/a85e49c673ed9c490e56565e69638712.1000x1000x1.jpg" alt="Card image" style="object-fit:cover">
                         <div class="card-img-overlay">
                         <h4 class="card-title">Fresku</h4>
@@ -80,7 +117,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="card" style="height:350px; color:#fff">
+                    <div class="card img-hover-zoom" style="height:350px; color:#fff">
                         <img class="card-img-top h-100" src="https://explore-the-north.nl/thumbs/690x500r/2018-10/akwasi-web.jpg" alt="Card image" style="object-fit:cover">
                         <div class="card-img-overlay">
                         <h4 class="card-title">Akwasi</h4>
@@ -90,7 +127,7 @@
                     </div>
                 </div>
                                 <div class="col-lg-3 col-md-6">
-                    <div class="card" style="height:350px; color:#fff">
+                    <div class="card img-hover-zoom" style="height:350px; color:#fff">
                         <img class="card-img-top h-100" src="http://images.genius.com/a85e49c673ed9c490e56565e69638712.1000x1000x1.jpg" alt="Card image" style="object-fit:cover">
                         <div class="card-img-overlay">
                         <h4 class="card-title">Fresku</h4>
@@ -100,7 +137,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="card" style="height:350px; color:#fff">
+                    <div class="card img-hover-zoom" style="height:350px; color:#fff">
                         <img class="card-img-top h-100" src="https://explore-the-north.nl/thumbs/690x500r/2018-10/akwasi-web.jpg" alt="Card image" style="object-fit:cover">
                         <div class="card-img-overlay">
                         <h4 class="card-title">Akwasi</h4>
@@ -110,7 +147,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="card" style="height:350px; color:#fff">
+                    <div class="card img-hover-zoom" style="height:350px; color:#fff">
                         <img class="card-img-top h-100" src="http://images.genius.com/a85e49c673ed9c490e56565e69638712.1000x1000x1.jpg" alt="Card image" style="object-fit:cover">
                         <div class="card-img-overlay">
                         <h4 class="card-title">Fresku</h4>
@@ -120,7 +157,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="card" style="height:350px; color:#fff">
+                    <div class="card img-hover-zoom" style="height:350px; color:#fff">
                         <img class="card-img-top h-100" src="https://explore-the-north.nl/thumbs/690x500r/2018-10/akwasi-web.jpg" alt="Card image" style="object-fit:cover">
                         <div class="card-img-overlay">
                         <h4 class="card-title">Akwasi</h4>
