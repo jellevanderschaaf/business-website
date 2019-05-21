@@ -180,6 +180,20 @@
                 height: 1px;
             }
 
+              .carousel-inner img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .carousel-inner {
+                max-height: 65vh;
+            }
+
+            .carousel-item {
+                max-height: 400px;
+                object-fit: cover;
+            }
+
         </style>
     </head>
     
@@ -199,6 +213,27 @@
                 </nav>
                 <div class="clearfix"></div>
         </header>
+
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="http://josvdnbroek.com/wp-content/uploads/2016/03/ChefSpecial.jpg" alt="Chef'Special">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images3.persgroep.net/rcs/cgfObxaiIxUEOSPVF8j_0KOzL4M/diocontent/137910091/_fill/1350/900/?appId=21791a8992982cd8da851550a453bd7f&quality=0.9" alt="Chef'Special">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
 
         <div id="roster" class="container">
             <h1>Artiesten</h1>
