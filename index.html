@@ -25,7 +25,12 @@
                 font-family: 'Baloo Bhai', Verdana, sans-serif;
             }
 
-            h1 {
+            h2 {
+                font-size: 21px;
+                margin-top: 20px;
+            }
+
+            h1, h2 {
                 display: grid;
                 width: 100%;
                 align-items: center;
@@ -33,9 +38,14 @@
                 grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
                 grid-gap: 20px;
             }
+            
+            h1:before, h1:after,
+            h2:before, h2:after {
+                content: '';
+                border-top: 2px solid #0275D8;
+            }
 
-            h1:before,
-            h1:after {
+            h2:before, h2:after {
                 content: '';
                 border-top: 2px solid #0275D8;
             }
@@ -60,8 +70,7 @@
                 background-color: #000;
             }
 
-            #roster h1 {
-                text-align: center;
+            #roster {
                 margin-top: 20px;
             }
 
@@ -180,6 +189,7 @@
                 margin-bottom: 20px;
                 border: 1px solid #0275d8;
                 object-fit: cover;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
             }
 
             #nieuws h3 {
@@ -192,7 +202,7 @@
             }
 
             .nieuwsitem {
-                padding: 20px 20px 0 20px;
+                padding: 10px;
             }
 
             hr {
@@ -217,12 +227,10 @@
 
             .navcontainer {
                 position: absolute;
-                margin: 20px;
-                width: 95%;
+                margin: 1%;
+                width: 98%;
                 z-index: 1;
             }
-
-
 
         </style>
     </head>
@@ -270,8 +278,8 @@
         </div>
 
         <div id="roster" class="container">
-            <h1>Artiesten</h1>
             <div class="row">
+                <h1>Artiesten</h1>
                 <div class="card-group">
                 <div class="col-lg-3 col-md-6">
                     <div class="card img-hover-zoom" style="height:350px; color:#fff">
@@ -354,27 +362,29 @@
                     </div>
                 </div>
                 </div>
+                <h2><a href="#">Bekijk alle artiesten</a></h2>
             </div>
         </div>
 
         <div id="nieuws" class="container">
-                <h1>Nieuws</h1>
                 <div class="row">
-                    <div class="nieuwsitem col-lg-4 col-md-6 col-sm12">
+                    <h1>Nieuws</h1>
+                    <div class="nieuwsitem col-lg-4 col-md-6 col-sm-12">
                         <h3>Goud voor Akwasi</h3>
                         <img src="https://www.topbillin.nl/wp/wp-content/uploads/12744318_486554908196623_674312560709881205_n-960x590.jpg">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper feugiat massa, eget sodales massa lacinia et. Nulla id ultrices arcu. Cras quis nulla fermentum nibh dapibus lacinia vel faucibus risus. Fusce erat risus, hendrerit eget sagittis ut, maximus vulputate arcu. Suspendisse quis tellus odio.</p>
                     </div>
-                    <div class="nieuwsitem col-lg-4 col-md-6 col-sm12">
+                    <div class="nieuwsitem col-lg-4 col-md-6 col-sm-12">
                         <h3>Goud voor Akwasi</h3>
                         <img src="https://www.topbillin.nl/wp/wp-content/uploads/12744318_486554908196623_674312560709881205_n-960x590.jpg">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper feugiat massa, eget sodales massa lacinia et. Nulla id ultrices arcu. Cras quis nulla fermentum nibh dapibus lacinia vel faucibus risus. Fusce erat risus, hendrerit eget sagittis ut, maximus vulputate arcu. Suspendisse quis tellus odio.</p>
                     </div>
-                    <div class="nieuwsitem col-lg-4 col-md-6 col-sm12">
+                    <div class="nieuwsitem col-lg-4 col-md-6 col-sm-12">
                         <h3>Goud voor Akwasi</h3>
                         <img src="https://www.topbillin.nl/wp/wp-content/uploads/12744318_486554908196623_674312560709881205_n-960x590.jpg">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper feugiat massa, eget sodales massa lacinia et. Nulla id ultrices arcu. Cras quis nulla fermentum nibh dapibus lacinia vel faucibus risus. Fusce erat risus, hendrerit eget sagittis ut, maximus vulputate arcu. Suspendisse quis tellus odio.</p>
                     </div>
+                    <h2><a href="#">Bekijk al het nieuws</a></h2>
                 </div>
         </div>
 
