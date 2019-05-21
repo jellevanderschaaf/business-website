@@ -50,7 +50,7 @@
                 border-top: 2px solid #0275D8;
             }
 
-            .col-lg-3, .col-md-6 {
+            #roster .col-lg-3, .col-md-6 {
                 padding: 0;
             }
 
@@ -185,11 +185,10 @@
             }
 
             #nieuws img {
-                max-width: 100%;
+                width: 100%;
                 margin-bottom: 20px;
-                border: 1px solid #0275d8;
                 object-fit: cover;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
             }
 
             #nieuws h3 {
@@ -199,6 +198,7 @@
                 color: #fff;
                 background-color: #0275d8;
                 margin-bottom: 0;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
             }
 
             .nieuwsitem {
@@ -235,8 +235,25 @@
             .banner1 {
                 width: 100%;
                 height: 200px;
-                object-fit: cover;
-                margin: 30px 0 30px 0;
+                margin: 30px 0 0 0;
+                background: linear-gradient(180deg, transparent 0%, white 100%), url('https://images3.persgroep.net/rcs/cgfObxaiIxUEOSPVF8j_0KOzL4M/diocontent/137910091/_fill/1350/900/?appId=21791a8992982cd8da851550a453bd7f&quality=0.9');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .banner2 {
+                width: 100%;
+                height: 200px;
+                margin: 30px 0 0 0;
+                background: linear-gradient(180deg, transparent 0%, white 100%), url('https://images.realworks.nl/servlets/images/media.objectmedia/76160806.jpg?height=1000&check=sha256%3A9f8c13ee46940c450d1a6388d93fd19b792a4d9fe085b28b277dc7ba5ccf4590&width=1500&resize=1');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #about {
+                margin-top: 20px;
             }
 
         </style>
@@ -395,27 +412,77 @@
                 </div>
         </div>
 
-        <img class="banner1" src="https://images3.persgroep.net/rcs/cgfObxaiIxUEOSPVF8j_0KOzL4M/diocontent/137910091/_fill/1350/900/?appId=21791a8992982cd8da851550a453bd7f&quality=0.9">
-
         <div id="agenda" class="container">
                 <div class="row">
+                    <div class="banner1"></div>
                     <h1>Agenda</h1>
                 </div>
                 <div class="row">
-                    <div class="col-3">21 mei</div>
+                    <div class="col-3"><strong>21 mei</strong></div>
                     <div class="col-4">Chef'Special</div>
                     <div class="col-4">Heineken Music Hall</div>
-                    <div class="col-1"><strong>Tickets</strong></div>
+                    <div class="col-1"><strong><a href="#">Tickets</a></strong></div>
                 </div>
                 <div class="row">
-                        <div class="col-3">22 mei</div>
+                        <div class="col-3"><strong>22 mei</strong></div>
                         <div class="col-4">Fresku</div>
                         <div class="col-4">Ziggo Dome</div>
-                        <div class="col-1"><strong>Tickets</strong></div>
+                        <div class="col-1"><strong><a href="#">Tickets</a></strong></div>
+                </div>
+                <div class="row">
+                    <div class="col-3"><strong>23 mei</strong></div>
+                    <div class="col-4">Typhoon</div>
+                    <div class="col-4">Johan Cruijff Arena</div>
+                    <div class="col-1"><strong><a href="#">Tickets</a></strong></div>
+                </div>
+                <div class="row">
+                        <div class="col-3"><strong>24 mei</strong></div>
+                        <div class="col-4">Akwasi</div>
+                        <div class="col-4">Melkweg</div>
+                        <div class="col-1"><strong><a href="#">Tickets</a></strong></div>
                 </div>
                 <div class="row">
                     <h2><a href="#">Bekijk de hele agenda</a></h2>
                 </div>
+        </div>
+
+        <div id="about" class="container">
+            <div class="row">
+                <div class="banner2"></div>
+                <h1>Over Ons</h1>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width:400px">
+                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap/img_avatar1.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width:400px">
+                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap/img_avatar1.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width:400px">
+                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap/img_avatar1.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h2><a href="#">Lees meer</a></h2>
+            </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"
